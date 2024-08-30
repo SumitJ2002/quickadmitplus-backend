@@ -4,7 +4,7 @@ const doctormiddleware = async (req, res, next) => {
   try {
     res.setHeader(
       "Access-Control-Allow-Origin",
-      "https://quickadmitplus-frontend-re4kbt8yh-sumit-jaiswars-projects.vercel.app"
+      "https://quickadmitplus-frontend.vercel.app"
     );
     const token = req.headers["jwtoken"];
     if (!token) {

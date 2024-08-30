@@ -8,8 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin:
-      "https://quickadmitplus-frontend-re4kbt8yh-sumit-jaiswars-projects.vercel.app",
+    origin: "https://quickadmitplus-frontend.vercel.app",
     credentials: true,
   })
 );
@@ -17,7 +16,7 @@ app.use((req, res, next) => {
   res.header("Access-Control-Expose-Headers", "jwtoken");
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://quickadmitplus-frontend-re4kbt8yh-sumit-jaiswars-projects.vercel.app"
+    "https://quickadmitplus-frontend.vercel.app"
   );
   next();
 });

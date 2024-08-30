@@ -4,7 +4,7 @@ const adminmiddleware = async (req, res, next) => {
   try {
     res.setHeader(
       "Access-Control-Allow-Origin",
-      "https://quickadmitplus-frontend.vercel.app/"
+      "https://quickadmitplus-frontend.vercel.app"
     );
     const token = req.headers["jwtoken"];
     if (!token) {

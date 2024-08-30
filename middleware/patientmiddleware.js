@@ -2,7 +2,7 @@ const Patient = require("../models/PatientSchema");
 const jwt = require("jsonwebtoken");
 const patientmiddleware = async (req, res, next) => {
   try {
-    res.setHeader("Access-Control-Allow-Origin", "https://quickadmitplus-frontend.vercel.app/");
+    res.setHeader("Access-Control-Allow-Origin", "https://quickadmitplus-frontend-re4kbt8yh-sumit-jaiswars-projects.vercel.app");
     const token = req.headers["jwtoken"];
     if (!token) {
       return res.status(401).send("Unauthorized: No Token Provided");
